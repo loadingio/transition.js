@@ -1,0 +1,13 @@
+doctype html
+html
+  include /../../static/assets/lib/ldui/pug/ldui.pug
+  head
+    +css("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+    +css("/assets/lib/ldui/ldui.min.css")
+  body
+    h2 hello
+    svg
+      circle(cx="50",cy="50",r="20",fill="#f00")
+    +script("/assets/lib/ldui/ldui.min.js")
+    +script("/js/animate.js")
+    +script("/js/index.js")

@@ -1,0 +1,26 @@
+{
+  "author": "zbryikt",
+  "name": "animator(tentative)",
+  "license": "MIT",
+  "description": "Animation by Attributes",
+  "version": "0.0.1",
+  "homepage": "https://github.com/plotdb/animator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plotdb/animator"
+  },
+  "engines": {
+    "node": ">=0.12.6",
+    "npm": ">=1.2.2"
+  },
+  "scripts": {
+    "start": "cd web; ../node_modules/.bin/lsc ../node_modules/template/server.ls"
+  },
+  "devDependencies": {
+    "LiveScript": ">=1.2.0",
+    "stylus": "^0.54.5",
+    "uglify-js": "=3.2.0",
+    "uglifycss": "0.0.29",
+    "template": "github:zbryikt/template#v2"
+  }
+}
