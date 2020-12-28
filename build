@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+echo "prepare..."
+rm -rf dist
+mkdir -p dist
+
+echo "building transition.ls -> transition.js ..."
+npx lsc -cp src/transition.ls > dist/transition.js
+echo "minify transition.js -> transition.min.js ..."
+npx uglifyjs dist/transition.js > dist/transition.min.js
+
+echo "copy dist to web ..."
+rm -rf web/static/assets/lib/transition.js/dev/
+mkdir -p web/static/assets/lib/transition.js/dev/
+cp -R dist/* web/static/assets/lib/transition.js/dev/

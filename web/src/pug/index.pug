@@ -1,13 +1,15 @@
 doctype html
 html
-  include /../../static/assets/lib/ldui/pug/ldui.pug
+  include /../../static/assets/lib/bootstrap.ldui/main/index.pug
   head
-    +css("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
-    +css("/assets/lib/ldui/ldui.min.css")
+    +css("/assets/lib/bootstrap/main/css/bootstrap.min.css")
+    +css("/assets/lib/bootstrap.ldui/main/bootstrap.ldui.min.css")
   body
     h2 hello
     svg
       circle(cx="50",cy="50",r="20",fill="#f00")
-    +script("/assets/lib/ldui/ldui.min.js")
-    +script("/js/animate.js")
+    +script("/assets/lib/@loadingio/ldquery/main/ldq.min.js")
+    +script("/assets/lib/@loadingio/cubic/main/cubic.min.js")
+    +script("/assets/lib/ldcolor/main/ldcolor.min.js")
+    +script("/assets/lib/transition.js/dev/transition.js")
     +script("/js/index.js")
